@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects · Valery Nkenguruke</title>
+  <meta name="description" content="Selected projects with notebooks and reports." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span>Valery Nkenguruke</span>
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="projects.html" aria-current="page">Projects</a></li>
+<li><a href="cv.html">CV</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+<header>
+  <h1 class="h-title">Projects</h1>
+  <p class="h-sub">Selected projects with clear framing, methods, and artifacts (PDFs or notebooks). External repositories can be linked as they become available.</p>
+</header>
+
+<section class="section">
+  <h2>Selected projects</h2>
+
+  <div class="filterbar">
+    <input data-filter="q" type="search" placeholder="Search projects…" aria-label="Search projects" />
+    <select data-filter="tag" aria-label="Filter by tag">
+      <option value="all">All tags</option>
+      <option value="machine learning">Machine learning</option>
+      <option value="neuroimaging">Neuroimaging</option>
+      <option value="vr">VR</option>
+      <option value="psycholinguistics">Psycholinguistics</option>
+      <option value="evaluation">Evaluation</option>
+    </select>
+  </div>
+
+  <div class="list">
+    <article class="card proj" data-card data-tags="machine learning, evaluation" data-text="nba physique performance per-100 outcomes grouped splits walk-forward ridge lasso random forest">
+      <div class="top">
+        <div>
+          <strong>NBA physique and performance (per-100 outcomes)</strong>
+          <div class="small">Predicting rebounds/blocks/assists with grouped player splits and time-aware testing.</div>
+        </div>
+        <div class="actions">
+          <a class="btn" href="assets/notebook_nba.ipynb">Notebook</a>
+        </div>
+      </div>
+      <div class="kv">
+        <span class="tag">Machine learning</span>
+        <span class="tag">Evaluation</span>
+        <span class="tag">Python</span>
+      </div>
+      <p class="muted" style="margin:10px 0 0;">Key results: scoring (PTS/100) remained weakly explained (test R² ≈ 0.02), while rebounding showed strong predictability (test R² ≈ 0.66) when adding age and position.</p>
+    </article>
+
+    <article class="card proj" data-card data-tags="neuroimaging" data-text="abide fmri functional connectivity aal atlas correlation matrices autism control nilearn">
+      <div class="top">
+        <div>
+          <strong>ABIDE fMRI functional connectivity (exploratory analysis)</strong>
+          <div class="small">Correlation-based connectivity matrices (AAL atlas) with group-average difference visualization.</div>
+        </div>
+        <div class="actions">
+          <a class="btn" href="assets/notebook_abide.ipynb">Notebook</a>
+        </div>
+      </div>
+      <div class="kv">
+        <span class="tag">Neuroimaging</span>
+        <span class="tag">Python</span>
+      </div>
+      <p class="muted" style="margin:10px 0 0;">Pipeline: fetch ABIDE (CPAC, AAL ROI time series), compute ROI×ROI correlations, then compare mean connectivity between ASD and control groups via a difference heatmap.</p>
+    </article>
+
+    <article class="card proj" data-card data-tags="vr, machine learning" data-text="winston churchill teachable agent vr llm engagement learning desktop comparison">
+      <div class="top">
+        <div>
+          <strong>VR teachable agent with LLM support (Winston Churchill)</strong>
+          <div class="small">Educational tech prototype combining teachable agents, VR interaction, and a language model.</div>
+        </div>
+        <div class="actions">
+          <a class="btn" href="assets/project_vr_llm.pdf">Report (PDF)</a>
+        </div>
+      </div>
+      <div class="kv">
+        <span class="tag">VR</span>
+        <span class="tag">LLM</span>
+      </div>
+      <p class="muted" style="margin:10px 0 0;">Study outcome: VR interaction increased perceived engagement compared to desktop, while learning gains were not clearly higher.</p>
+    </article>
+
+    <article class="card proj" data-card data-tags="psycholinguistics, evaluation" data-text="real-time speech exchange rse inferential model speech production auditory feedback agency psychopy praat pilot studies">
+      <div class="top">
+        <div>
+          <strong>Real-time Speech Exchange (RSE) pilot studies</strong>
+          <div class="small">Manipulating auditory feedback to study speech monitoring and perceived agency in conversation.</div>
+        </div>
+        <div class="actions">
+          <a class="btn" href="assets/project_rse.pdf">Report (PDF)</a>
+        </div>
+      </div>
+      <div class="kv">
+        <span class="tag">Psycholinguistics</span>
+        <span class="tag">Experimental methods</span>
+      </div>
+      <p class="muted" style="margin:10px 0 0;">Methods: RSE system for real-time word substitution, Psychopy for stimulus presentation, and Praat for acoustic analysis (timing, pitch, intensity).</p>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Project page pattern</h2>
+  <div class="card item">
+    <p><strong>Recommended structure:</strong> Problem → Data → Methods → Evaluation → Results → Limitations → Next steps → Links (code, paper, slides).</p>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+
+  </main>
+
+  <footer class="footer">
+    <div>© <span id="y"></span> Valery Nkenguruke · <a href="mailto:valery.dukenguruke@gmail.com">valery.dukenguruke@gmail.com</a></div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
